@@ -13,7 +13,7 @@ function getAllPhotos(){
 
         photoService.getAllPhotos()
             .then(
-                photos=>dispatch(success(photos)),
+                photos => dispatch(success(photos)),
                 error => dispatch(failure(error))
             )
         }
