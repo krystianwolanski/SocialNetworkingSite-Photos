@@ -15,7 +15,6 @@ namespace WebApi.Entities
         
         public Profile Profile { get; set; }
         //public int Likes { get; set; }
-        public ICollection<Like> Likes { get; set; }
 
     }
 }

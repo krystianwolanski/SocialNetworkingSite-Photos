@@ -85,6 +85,7 @@ namespace WebApi
             services.AddScoped<IProfileService, ProfileService>();
             services.AddScoped<IPhotoService, PhotoService>();
             services.AddScoped<ICommentService, CommentService>();
+            services.AddScoped<ILikeService, LikeService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

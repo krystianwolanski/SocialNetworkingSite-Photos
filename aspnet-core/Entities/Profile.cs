@@ -23,6 +23,5 @@ namespace WebApi.Entities
 
         public User User { get; set; }
         public ICollection<ProfilePhoto> ProfileImages { get; set; }
-        public ICollection<Like> Likes { get; set; }
     }
 }

@@ -1,6 +1,7 @@
 using AutoMapper;
 using WebApi.Entities;
 using WebApi.Models.Comments;
+using WebApi.Models.Likes;
 using WebApi.Models.Profiles;
 using WebApi.Models.Users;
 
@@ -27,6 +28,8 @@ namespace WebApi.Helpers
                 .ForMember(dest => dest.Username, opt => opt.MapFrom(src => src.Profile.User.Username))
                 .ForMember(dest => dest.ProfileImageUrl, opt => opt.MapFrom(src => src.Profile.ProfileImageUrl));
             //CreateMap<AddCommentModel, Comment>();
+
+            CreateMap<Like, LikeModel>();
                 
         }
     }
