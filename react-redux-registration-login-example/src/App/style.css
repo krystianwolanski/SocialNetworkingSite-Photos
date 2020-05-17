@@ -1,0 +1,469 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.header a {
+    color: white;
+    text-decoration: none;
+}
+.headerRight{
+    display: flex;
+}
+.headerRight a
+{
+    margin:0 10px;
+}
+/* REGISTRATION */
+
+.mainContainer {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('./group-of-photographers-inside-the-building-3777916.jpg');
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainContainer .formanddescription {
+    display: flex;
+    width: 65vw;
+    color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.mainContainer .formanddescription .container1 {
+    display: flex;
+    min-width: 40%;
+    background: rgba(177, 135, 77, 0.45);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.mainContainer .formanddescription .container1 .form {
+    padding: 1.5em 0;
+}
+.mainContainer .formanddescription .container1 .form h2 {
+    margin-bottom: 20px;
+}
+.mainContainer .formanddescription .container1 .form .form-group input {
+    margin-top: 6px;
+    height: 37px;
+    width: 15em;
+    font-size: 1em;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    margin-bottom: 18px;
+    transition: all 250ms ease-in-out;
+}
+.mainContainer .formanddescription .container1 .form .form-group input:focus {
+    outline: none;
+    border-color: gold;
+}
+.mainContainer .formanddescription .container1 .form .form-group input::placeholder {
+    color: rgba(255, 255, 255, 0.753);
+}
+.mainContainer .formanddescription .container1 .form .form-group input:focus::-webkit-input-placeholder {
+    color: white;
+}
+.mainContainer .formanddescription .container1 .form .form-group input:hover {
+    border-color: gold;
+}
+.mainContainer .formanddescription .container1 .form .btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 9px;
+}
+.mainContainer .formanddescription .container1 .form .btn button {
+    background-color: white;
+    border: none;
+    padding: 12px 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 7px;
+    font-size: 1em;
+    transition: all 300ms ease-in-out;
+    color: rgba(177, 135, 77, 1);
+    font-weight: bolder;
+}
+.mainContainer .formanddescription .container1 .form .btn button:hover {
+    background-color: #d4d4d4;
+    cursor: pointer;
+}
+
+
+.mainContainer .formanddescription .container2 {
+    display: flex;
+    justify-content: center;
+    min-width: 60%;
+    background: rgba(42, 80, 112, 0.45);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    align-items: center;
+}
+
+.mainContainer .formanddescription .container2 .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px;
+}
+
+/* END OF REGISTRATION */
+
+/* LOGIN */
+
+.mainContainerLogin {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('./group-of-photographers-inside-the-building-3777916.jpg');
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+}
+.mainContainerLogin .container {
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    width: 30%;
+    padding: 20px;
+    margin-top: 15vh;
+}
+.mainContainerLogin .container form {
+    display: flex;
+    flex-direction: column;
+}
+.mainContainerLogin .container form .buttonContainer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+/* END OF LOGIN */
+
+/* PROFILE */
+
+.banner {
+ 
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.profileContent {
+    display: flex;
+    align-items: flex-start;
+}
+.profileContent .profileDescription {
+    width: 450px;
+    min-height: 500px;
+    background-color: white;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    z-index: 0;
+    top: -70px;
+    left: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.profileContent .profileDescription  .name {
+    margin-top: 5px;
+}
+.profileContent .profileDescription  .shortDescription {
+    text-align: center;
+}
+.profileContent .profileDescription  .circle {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    background-position: center center;
+    background-size: cover;
+}
+.profileContent .profileDescription  .buttonsContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 0px;
+}
+.profileContent .profileDescription  .about {
+    align-self:flex-start;
+}
+.profileContent .images {
+    z-index: 0;
+    margin-left: 40px;
+    position: relative;
+    width: calc(100% - 70px);
+    padding: 30px;
+}
+.profileContent .images .card{
+   
+    
+
+}
+.profileContent .images .card img{
+    width: 100%;
+}
+
+.my-masonry-grid {
+    display: -webkit-box; /* Not needed if autoprefixing */
+    display: -ms-flexbox; /* Not needed if autoprefixing */
+    display: flex;
+    margin-left: -20px; /* gutter size offset */
+    width: auto;
+  }
+  .my-masonry-grid_column {
+    padding-left: 20px; /* gutter size */
+    background-clip: padding-box;
+  }
+   
+  /* Style your items */
+  .my-masonry-grid_column > a .card { /* change div to reference your elements you put in <Masonry> */
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+
+  .my-masonry-grid-main {
+    display: -webkit-box; /* Not needed if autoprefixing */
+    display: -ms-flexbox; /* Not needed if autoprefixing */
+    display: flex;
+    margin-left: -20px; /* gutter size offset */
+    width: auto;
+  }
+  .my-masonry-grid_column-main {
+    padding-left: 20px; /* gutter size */
+    background-clip: padding-box;
+  }
+   
+  /* Style your items */
+  .my-masonry-grid_column-main  a .card { /* change div to reference your elements you put in <Masonry> */
+    position: relative;
+    margin-bottom: 15px;
+  }
+  .cardFooter {
+    position: absolute;
+    
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(180deg,transparent 0,rgba(0,0,0,.6));
+    bottom: 4px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0;
+    color:white;
+    transition: opacity .5s ease-in-out;
+    
+  }
+  .cardFooter > div{
+      display: flex;
+      align-items: center;
+  }
+  .cardFooter > div > p {
+      margin: 0 10px;
+  }
+  .mainCircle{
+    margin:0 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-position: center center;
+    background-size: cover;
+    background-image: url("./ayo-ogunseinde-6W4F62sN_yI-unsplash.jpg");
+  }
+  .card:hover .cardFooter{
+    opacity: 1;
+  }
+  .iconHeart{
+      transition: color .3s ease-in-out;
+  }
+  .iconHeart:hover{
+    color:#c62828;
+  }
+  .mainContent{
+      width: 95%;
+      margin:0 auto;
+  }
+  .my-masonry-grid_column-main > a .card::after:hover {
+    
+  }
+  .my-masonry-grid_column-main > a .card img{
+      width: 100%;
+      
+  }
+  .main-menu{
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin-top: 59px;
+      font-weight: bolder;
+      font-size: 1.3rem;
+      padding: 20px 0;
+  }
+  .modalWrapper{
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      top:0;
+      left:0;
+      bottom: 0;
+      right: 0;
+
+      background-color: rgba(0,0,0,.85);
+      
+      z-index: 40;
+     
+  }
+
+  .modalWrapper .modalOwn{
+      position: absolute;
+      background-color: white;
+      max-width: 90%;
+        height: 90%;
+      z-index: 50;
+      display: flex;
+      justify-content: center;
+  }
+ .modalWrapper .modalOwn .leftSide{
+    width: calc(100% - 230px);
+    height: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+   
+  }
+  .modalWrapper .modalOwn .leftSide img{  
+      max-height: 100%;
+      max-width: 100%;
+  }
+  .modalWrapper .modalOwn .rightSide{
+    width: 230px;
+    background-color: #222326;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .modalWrapper .modalOwn .rightSide .author{
+      display: flex;
+      justify-content: center;
+      padding:15px 0;
+  }
+  .modalWrapper .modalOwn .rightSide .author .circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-position: center center;
+    background-size: cover;
+    background-image: url("./ayo-ogunseinde-6W4F62sN_yI-unsplash.jpg");
+  }
+  .modalWrapper .modalOwn .rightSide .author .authorName{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+  .close{
+      position: absolute;
+      right: 40px;
+      top: 20px;
+      color:white;
+  }
+
+  .parameters{
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      
+      
+  }
+  .parameters > li{
+      text-align: center;
+      width: 50%;
+      display: flex;
+        padding: 10px 0;
+      justify-content: center;
+  }
+  .parameters > li i{
+      padding-right: 4px;
+  }
+/* END OF PROFILE */
+
+.formAddPhoto{
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.formAddPhoto input{
+    text-align: center;
+}
+.formAddPhoto Button{
+    margin: 20px 0;
+}
+
+.comments{
+    width: 80%;
+    list-style: none;
+}
+.comment{
+    display: flex;
+    margin: 10px 0;
+}
+.comment p{
+    
+    box-sizing: border-box;
+    padding-left: 10px;
+    width: calc(100% - 40px);
+    overflow-wrap: break-word;
+}
+
+.commentCircle{
+    
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-position: center center;
+    background-size: cover;
+    /* background-image: url("./ayo-ogunseinde-6W4F62sN_yI-unsplash.jpg"); */
+
+    
+}
